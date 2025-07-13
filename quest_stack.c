@@ -83,7 +83,9 @@ bool quest_stack_is_empty(quest_stack_t *s) {
 
 bool quest_stack_reset(quest_stack_t *s) {
     assert(s);
+#ifndef NDEBUG
     my_memset(s->elems, 0xDE, s->elem_size * s->capacity);
+#endif /* NDEBUG */
     s->size = 0;
     return true;
 }
