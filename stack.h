@@ -1,5 +1,5 @@
-#ifndef STACK_H_
-#define STACK_H_
+#ifndef QUEST_STACK_H_
+#define QUEST_STACK_H_
 
 #include <quest/quest_common.h>
 
@@ -28,4 +28,4 @@ extern "C" {
 
 #include <quest/quest_footer.h>
 
-#endif /* STACK_H_ */
+#endif /* QUEST_STACK_H_ */
