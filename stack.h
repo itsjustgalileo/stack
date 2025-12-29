@@ -22,14 +22,14 @@ extern "C" {
      * @param size Size of each element in bytes.
      * @return Pointer to a newly allocated Stack, or NULL on failure.
      */
-    extern Stack *stack_init(size_t count, size_t size);
+    extern Stack *stack_create(size_t count, size_t size);
 
     /**
      * @brief Free all resources associated with a stack.
      *
      * @param s Pointer to the stack to clean up.
      */
-    extern void stack_cleanup(Stack *s);
+    extern void stack_destroy(Stack *s);
 
     /**
      * @brief Push a new element onto the stack.
