@@ -80,7 +80,7 @@ extern "C" {
      * @return Pointer to the top element.
      */
     extern void *stack_top(Stack *s);
-    
+
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
